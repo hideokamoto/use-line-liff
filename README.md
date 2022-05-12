@@ -54,3 +54,50 @@ const Home = () => {
 
 export default Home
 ```
+
+## Usage
+
+### Mock
+
+Enabled `@line/liff-mock` plugin.
+
+```jsx
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <LiffProvider
+      liffId={process.env.NEXT_PUBLIC_LIFF_ID as string}
+      mock={{
+        enable: true
+      }}
+    >
+      <Component {...pageProps} />
+    </LiffProvider>
+  )
+}
+```
+
+Return custom value.
+
+```jsx
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <LiffProvider
+      liffId={process.env.NEXT_PUBLIC_LIFF_ID as string}
+      mock={{
+        enable: true,
+        mockDidLoaded: (p) => {
+          return {
+            ...p,
+            getProfile: {
+                ...p.getProfile,
+                userId: 'custom-user-id'
+            }
+          }
+        }
+      }}
+    >
+    <Component {...pageProps} />
+    </LiffProvider>
+  )
+}
+```
