@@ -59,6 +59,7 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
-    "@line/liff": "^2.19.1"
+    "@line/liff": "^2.19.1",
+    "@line/liff-mock": "^1.0.0"
   }
 }
