@@ -33,16 +33,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "use-liff",
+  "name": "use-line-liff",
   "author": "hideokamoto",
-  "module": "dist/use-liff.esm.js",
+  "module": "dist/use-line-liff.esm.js",
   "size-limit": [
     {
-      "path": "dist/use-liff.cjs.production.min.js",
+      "path": "dist/use-line-liff.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/use-liff.esm.js",
+      "path": "dist/use-line-liff.esm.js",
       "limit": "10 KB"
     }
   ],

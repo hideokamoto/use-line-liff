@@ -1,17 +1,17 @@
-# use-liff
+# use-line-liff
 
 ## Getting started
 
 ### Install
 
 ```bash
-$ npm i use-liff
+$ npm i use-line-liff
 ```
 
 ### Setup Provider
 
 ```jsx
-import { LiffProvider } from 'use-liff'
+import { LiffProvider } from 'use-line-liff'
 
 function MyApp({ children }) {
   return (
@@ -29,7 +29,7 @@ export default MyApp
 
 ```jsx
 import { useEffect } from 'react'
-import { useLiff } from 'use-liff'
+import { useLiff } from 'use-line-liff'
 
 const Home = () => {
   const { liff } = useLiff()
