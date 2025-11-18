@@ -3,3 +3,16 @@
 node_modules
 .cache
 dist
+
+# Vite
+.vite
+
+# Vitest
+coverage
+
+# TypeScript
+*.tsbuildinfo
+
+# Editor
+.vscode
+.idea
