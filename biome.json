@@ -8,13 +8,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": [
-      "node_modules",
-      "dist",
-      "*.lock",
-      "yarn.lock",
-      "package-lock.json"
-    ]
+    "ignore": ["node_modules", "dist", "yarn.lock"]
   },
   "formatter": {
     "enabled": true,

@@ -36,10 +36,7 @@
 
     // Best practices
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-
-    // For Vitest
-    "types": ["vitest/globals"]
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"]

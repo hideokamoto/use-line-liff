@@ -27,7 +27,7 @@ export const LiffProvider: FC<
     if (typeof window === 'undefined') return;
     if (didLoadRef.current === true) return;
     didLoadRef.current = true;
-    import('@line/liff').then((data: any) => setLiffSDK(data));
+    import('@line/liff').then((module) => setLiffSDK(module.default));
   }, []);
   // init Liff
   useEffect(() => {
